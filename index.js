@@ -232,7 +232,8 @@ scene3.on("message", (ctx) => {
     ctx.message.text != "/start" &&
     ctx.message.text != "/xato" &&
     ctx.message.text != "/count" &&
-    ctx.message.text != "/admin"
+    ctx.message.text != "/admin" &&
+    ctx.message.text != "/info"
   ) {
     adminCommand(ctx);
     ctx.scene.leave();
@@ -865,7 +866,7 @@ bot.hears("Maxsus darslar", (ctx) => {
 });
 
 // CapCut course
-bot.hears("PowerPoint", (ctx) => {
+bot.hears("Powerpoint", (ctx) => {
   coding = false;
   graphic = false;
   modelling = false;
