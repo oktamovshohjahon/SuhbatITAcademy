@@ -1,0 +1,20 @@
+{
+  "name": "itacademy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.3",
+    "nodemon": "^3.0.2",
+    "telegraf": "^4.15.3"
+  }
+}
