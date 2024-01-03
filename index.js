@@ -2,8 +2,16 @@
 import { Telegraf, Markup, Scenes, session } from "telegraf";
 import mongoose from "mongoose";
 import { Schema, model } from "mongoose";
+import { Express } from "express";
 import dotenv from "dotenv";
 dotenv.config();
+
+// app
+const app = Express();
+
+const webhookUrl = "https://ita-cademy.vercel.app/api/telegram-bot";
+
+bot.setWebHook(webhookUrl);
 
 // import keyboards
 import coursesKeyboard from "./keyboards/mainCourses.js";
